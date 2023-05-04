@@ -5,12 +5,16 @@
         "args": {}
     },
 	"runArgs": ["--env-file",".devcontainer/devcontainer.env"],
-	"extensions": [
-		"golang.go",
-		"ms-azuretools.vscode-docker"
-	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.go",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
 	"mounts": [
 		"source=terraform-provider-azurerm-source,target=${containerWorkspaceFolder}/src,type=volume"
 	],
-	"postStartCommand": "scripts/setup.sh"
+	"postStartCommand": "scripts/setup.sh && scripts/tmux.sh"
 }
