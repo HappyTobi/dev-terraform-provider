@@ -1,6 +1,6 @@
-FROM golang:1.19-bullseye
+FROM golang:1.20-bullseye
 
-ARG TERRAFORM_VERSION="1.1.7"
+ARG TERRAFORM_VERSION="1.4.6"
 
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y \
   python3 \
   python3-pip \
   make \
-  unzip
+  unzip \
+  tmux
 
 RUN pip install azure-cli
 

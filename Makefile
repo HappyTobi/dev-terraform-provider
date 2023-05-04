@@ -8,4 +8,4 @@ all: binary
 binary:
 	echo "build terraform provider"
 	cd /workspaces/dev-terraform-provider/src/terraform-provider-azurerm; \
-	$(GO) build -gcflags=all="-N -l" -o /workspaces/dev-terraform-provider/build/terraform
+	$(GO) build -gcflags=all="-N -l" -o /workspaces/dev-terraform-provider/terraform/terraform-azurerm/terraform-provider-azurerm
