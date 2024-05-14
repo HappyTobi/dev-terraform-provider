@@ -1,4 +1,4 @@
-FROM golang:1.20-bullseye
+FROM golang:1.21-bullseye
 
 ARG TERRAFORM_VERSION="1.4.6"
 

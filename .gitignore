@@ -1,1 +1,2 @@
 ./build/terraform/terraform-azurerm/*
+.DS_Store
