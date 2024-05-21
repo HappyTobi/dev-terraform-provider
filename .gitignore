@@ -1,2 +1,7 @@
+./build/terraform/terraform-azuread/*
 ./build/terraform/terraform-azurerm/*
 .DS_Store
+*.tfstate
+*.tfstate.backup
+.terraform.lock*
+.terraform*
