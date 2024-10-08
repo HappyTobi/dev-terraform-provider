@@ -6,6 +6,7 @@ provider_installation {
   # null provider plugin in the given directory.
   dev_overrides {
     "hashicorp/azurerm" = "/workspaces/dev-terraform-provider/build/terraform/terraform-azurerm"
+    "hashicorp/azuread" = "/workspaces/dev-terraform-provider/build/terraform/terraform-azuread"
   }
 
   # For all other providers, install them directly from their origin provider
